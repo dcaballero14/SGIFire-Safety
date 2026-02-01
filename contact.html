@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Request Service | SGI Fire & Safety</title>
+  <meta name="description" content="Request service, inspections, or training from SGI Fire & Safety. Fast response and clear scheduling." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="pill">Fast scheduling • Clear scope • Commercial support</div>
+        <div class="pill"><span>Call:</span> <a href="tel:+19186405402"><strong>(918) 640-5402</strong></a></div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <img src="assets/sgi-logo.png" alt="SGI Fire & Safety logo">
+          <div class="text"><strong>SGI Fire &amp; Safety</strong><span>Sims Group, Inc.</span></div>
+        </a>
+
+        <div class="navlinks">
+          <a href="index.html">Home</a>
+          <a href="fire-protection.html">Fire Protection</a>
+          <a href="inspections-compliance.html">Inspections & Compliance</a>
+          <a href="training.html">Training</a>
+          <a class="active" href="contact.html">Contact</a>
+        </div>
+
+        <div class="nav-cta">
+          <a class="btn secondary" href="tel:+19186405402">(918) 640-5402</a>
+          <a class="btn primary" href="tel:+19186405402">Call Now</a>
+          <button class="menu-btn" data-menu-btn aria-expanded="false" aria-controls="drawer">Menu</button>
+        </div>
+      </nav>
+
+      <div id="drawer" class="drawer" data-drawer>
+        <a href="index.html">Home</a>
+        <a href="fire-protection.html">Fire Protection</a>
+        <a href="inspections-compliance.html">Inspections & Compliance</a>
+        <a href="training.html">Training</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-card">
+            <span class="badge">Request service • inspections • training</span>
+            <h1>Request Service</h1>
+            <p>
+              Tell us what you need and we’ll respond quickly with next steps and scheduling options.
+              If it’s urgent, calling is fastest.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn primary" href="tel:+19186405402">Call (918) 640-5402</a>
+              <a class="btn secondary" href="#form">Fill Out Request Form</a>
+            </div>
+
+            <div class="hero-proof">
+              <div class="item"><span class="dot"></span><span>Commercial + industrial support</span></div>
+              <div class="item"><span class="dot"></span><span>Clear documentation</span></div>
+              <div class="item"><span class="dot"></span><span>Fast response</span></div>
+            </div>
+          </div>
+
+          <aside class="hero-media" aria-label="Contact image">
+            <div class="img" style="background-image:
+              linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.45)),
+              url('assets/hero-fire.jpg');"></div>
+            <div class="overlay">
+              <strong>Prefer email-style requests?</strong>
+              <span>Use the form — we’ll follow up with next steps.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="panel">
+            <div class="pad" id="form">
+              <h3>Service Request Form</h3>
+              <p>Minimal info — just enough for us to get back to you fast.</p>
+
+              <!-- NOTE: Replace action with your Formspree / server endpoint if needed -->
+              <form class="form" data-contact-form action="#" method="post">
+                <div class="row-2">
+                  <div>
+                    <label for="first">First name *</label>
+                    <input id="first" name="first" type="text" data-required="true" placeholder="First name" />
+                  </div>
+                  <div>
+                    <label for="last">Last name *</label>
+                    <input id="last" name="last" type="text" data-required="true" placeholder="Last name" />
+                  </div>
+                </div>
+
+                <div class="row-2">
+                  <div>
+                    <label for="email">Email *</label>
+                    <input id="email" name="email" type="email" data-required="true" placeholder="name@company.com" />
+                  </div>
+                  <div>
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" placeholder="(###) ###-####" />
+                  </div>
+                </div>
+
+                <div class="row-2">
+                  <div>
+                    <label for="service">Service type *</label>
+                    <select id="service" name="service" data-required="true">
+                      <option value="">Select one</option>
+                      <option>Fire Extinguisher Service</option>
+                      <option>Inspection / Maintenance</option>
+                      <option>Compliance Support</option>
+                      <option>Training</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="location">Facility / City</label>
+                    <input id="location" name="location" type="text" placeholder="Tulsa, OK (or facility name)" />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="message">Details *</label>
+                  <textarea id="message" name="message" data-required="true" placeholder="What do you need? Any time constraints? Number of locations?"></textarea>
+                </div>
+
+                <button class="btn primary" type="submit">Submit Request</button>
+                <div class="note">
+                  Urgent need? Call <a href="tel:+19186405402"><strong>(918) 640-5402</strong></a>.
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="pad">
+              <h3>Prefer to call?</h3>
+              <p>We’ll help you quickly — especially for urgent service needs or scheduling questions.</p>
+
+              <div class="cta" style="margin-top:14px;">
+                <div>
+                  <h3>Call SGI Fire &amp; Safety</h3>
+                  <p><a href="tel:+19186405402"><strong>(918) 640-5402</strong></a></p>
+                </div>
+                <div>
+                  <a class="btn primary" href="tel:+19186405402">Call Now</a>
+                </div>
+              </div>
+
+              <div style="margin-top:16px;">
+                <h3>What to include in your request</h3>
+                <ul style="margin:10px 0 0 0; padding-left:18px; color:var(--muted); line-height:1.7;">
+                  <li>Facility type (office, industrial, warehouse, etc.)</li>
+                  <li>Service needed (inspection, training, extinguishers, etc.)</li>
+                  <li>Number of locations</li>
+                  <li>Any deadlines or audit timelines</li>
+                </ul>
+              </div>
+
+              <div style="margin-top:16px;">
+                <a class="btn secondary" href="inspections-compliance.html">See Compliance Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> SGI Fire &amp; Safety. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <div class="mobile-cta">
+    <a class="primary" href="#form">Request Service</a>
+    <a href="tel:+19186405402">Call Now</a>
+  </div>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
